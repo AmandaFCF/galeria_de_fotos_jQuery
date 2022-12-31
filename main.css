@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+header {
+
+    align-items: center;
+    background-color: purple;
+    padding: 10px 24px;
+    color: white;
+    display: flex;
+    border-bottom: 3px solid rgb(114, 13, 114);
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    box-sizing: 1090px;
+}
+
+header button {
+    padding: 5px 15px;
+    margin-left: 60px;
+}
+
+form {
+    background-color: rgba(128, 128, 128, 0.151);
+    padding: 24px;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+    font-size: medium;
+}
+
+input, button {
+    padding: 6px 10px;
+}
+
+button {
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#reset {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 220px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlayImg {
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlayImg a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+ul li:hover .overlayImg {
+    opacity: 1;
+}
